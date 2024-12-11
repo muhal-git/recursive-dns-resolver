@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### resource files ###
+spring-boot-resources/
