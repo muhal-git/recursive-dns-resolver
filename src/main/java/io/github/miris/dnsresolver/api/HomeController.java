@@ -1,4 +1,4 @@
-package io.github.miris.dnsresolver.controller;
+package io.github.miris.dnsresolver.api;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
