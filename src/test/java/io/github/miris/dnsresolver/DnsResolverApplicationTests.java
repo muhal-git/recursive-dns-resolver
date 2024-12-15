@@ -1,4 +1,4 @@
-package io.github.miris.dns_resolver;
+package io.github.miris.dnsresolver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -8,6 +8,6 @@ class DnsResolverApplicationTests {
 
 	@Test
 	void contextLoads() {
+		// Add test logic here
 	}
-
 }
