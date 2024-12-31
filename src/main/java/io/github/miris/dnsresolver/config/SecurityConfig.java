@@ -43,13 +43,13 @@ public class SecurityConfig {
     public InMemoryUserDetailsManager users() {
 
         UserDetails user = User.withUsername("user")
-                .password(environment.getProperty("user.password"))
+                .password(environment.getProperty("api.user.password"))
                 .authorities("read")
                 .roles("user")
                 .build();
 
         UserDetails admin = User.withUsername("admin")
-                .password(environment.getProperty("admin.password"))
+                .password(environment.getProperty("api.admin.password"))
                 .authorities("read")
                 .roles("admin")
                 .build();
