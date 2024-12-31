@@ -6,7 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
-    @GetMapping("/")
+    /**
+     * Home page for the DNS Resolver Application.
+     * 
+     * @return Welcome message
+     */
+    @GetMapping
     public String home() {
         return "Welcome to the DNS Resolver Application!";
     }

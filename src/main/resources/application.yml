@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: recursive-dns-resolver
+server:
+  error:
+    whitelabel:
+      enabled: false
+    include-stacktrace: never
+logging:
+  level:
+    '[io.github.miris.dnsresolver]': TRACE
+    '[org.springframework]': ERROR
+rsa:
+  public-key: classpath:jwtcerts/rsapublic.pem
+  private-key: classpath:jwtcerts/rsaprivate.pem
+api:
+  user:
+    password: "$2a$10$tTjVvZO/vpEfn8WEfBvk6OXr2.yiuHAWuxaxCLz7yMoayl42hc1WS"
+  admin:
+    password: "$2a$10$tTjVvZO/vpEfn8WEfBvk6OXr2.yiuHAWuxaxCLz7yMoayl42hc1WS"

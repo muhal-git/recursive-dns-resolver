@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "rsa.public-key",
+    "type": "java.lang.String",
+    "description": "RSA public key PEM file"
+  },
+  {
+    "name": "rsa.private-key",
+    "type": "java.lang.String",
+    "description": "RSA private key PEM file'"
+  },
+  {
+    "name": "api.user.password",
+    "type": "java.lang.String",
+    "description": "A description for 'api.user.password'"
+  },
+  {
+    "name": "api.admin.password",
+    "type": "java.lang.String",
+    "description": "A description for 'api.admin.password'"
+  }
+]}

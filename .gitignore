@@ -34,3 +34,6 @@ build/
 
 ### resource files ###
 spring-boot-resources/
+
+### sensitive files ###
+src/main/resources/jwtcerts/*.pem
