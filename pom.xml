@@ -42,6 +42,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
 
         <!-- JWT auth dependencies  -->
         <dependency>
@@ -54,13 +58,13 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- JPA dependencies  -->
+        <!-- dnsjava dependency -->
         <dependency>
             <groupId>dnsjava</groupId>
             <artifactId>dnsjava</artifactId>
             <version>3.4.2</version>
         </dependency>
-        
+
         <!-- dev environment dependencies  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
