@@ -18,15 +18,17 @@ public class DnsLookupResultDto {
     private long ttl;
     private String data;
 
-    public DnsLookupResultDto(Record dnsRecord) {
-        this.name = dnsRecord.getName().toString();
-        this.type = dnsRecord.getType();
-        this.ttl = dnsRecord.getTTL();
-        this.data = dnsRecord.rdataToString();
+    public static DnsLookupResultDto of(Record dnsRecord) {
+        DnsLookupResultDto dto = new DnsLookupResultDto();
+        dto.setName(dnsRecord.getName().toString());
+        dto.setType(dnsRecord.getType());
+        dto.setTtl(dnsRecord.getTTL());
+        dto.setData(dnsRecord.rdataToString());
+        return dto;
     }
 
     public static List<DnsLookupResultDto> fromDnsRecords(Record[] dnsRecords) {
-        return List.of(dnsRecords).stream().map(DnsLookupResultDto::new).toList();
+        return List.of(dnsRecords).stream().map(DnsLookupResultDto::of).toList();
     }
 
 }
